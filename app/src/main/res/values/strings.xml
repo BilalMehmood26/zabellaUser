@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Zabella User</string>
+    <string name="forget_password"><u>Forget Password</u></string>
+    <string name="term"><u>Terms &amp; Condition</u></string>
+    <string name="api_key">AIzaSyBBHiPBzaKIdhByQszaX4VdbtngMjoDFZ8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
