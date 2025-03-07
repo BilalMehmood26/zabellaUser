@@ -58,6 +58,12 @@ class YourDestinationActivity : AppCompatActivity() {
 
             markCompleteBtn.setOnClickListener {
                 //showPaymentDialog(carType)
+                startActivity(Intent(this@YourDestinationActivity,DashboardActivity::class.java))
+                overridePendingTransition(
+                    androidx.appcompat.R.anim.abc_fade_in,
+                    androidx.appcompat.R.anim.abc_fade_out
+                )
+                finish()
             }
 
             //getCardList(UserSession.user.stripeCustid!!)

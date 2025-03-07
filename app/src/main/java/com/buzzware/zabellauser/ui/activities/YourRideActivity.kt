@@ -66,8 +66,6 @@ class YourRideActivity : AppCompatActivity(), OnMapReadyCallback {
             rideID = intent.getStringExtra("rideID")
             driverVehicle = intent.getStringExtra("carType")*/
 
-            pickUpTv.text = pickUpAddress
-            dropOffTv.text = dropOffAddress
 
             //getOrders()
 

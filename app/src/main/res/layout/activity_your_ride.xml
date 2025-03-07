@@ -264,6 +264,7 @@
             android:layout_height="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_10sdp"
             android:src="@drawable/ic_pin_gold"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="@+id/profileIV"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
@@ -274,6 +275,7 @@
             android:layout_marginStart="@dimen/_7sdp"
             android:fontFamily="@font/montserrat_semi_bold"
             android:text="5 km"
+            android:visibility="gone"
             android:textColor="@color/white"
             android:textSize="@dimen/_10sdp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView40"
@@ -286,6 +288,7 @@
             android:layout_height="@dimen/_20sdp"
             android:layout_marginStart="@dimen/_17sdp"
             android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="gone"
             android:src="@drawable/ic_time_gold"
             app:layout_constraintStart_toEndOf="@+id/distance_tv"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
@@ -297,6 +300,7 @@
             android:layout_marginStart="@dimen/_7sdp"
             android:fontFamily="@font/montserrat_semi_bold"
             android:text="30 min"
+            android:visibility="gone"
             android:textColor="@color/white"
             android:textSize="@dimen/_10sdp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView5"
@@ -308,6 +312,7 @@
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_20sdp"
             android:layout_marginStart="@dimen/_17sdp"
+            android:visibility="gone"
             android:layout_marginTop="@dimen/_10sdp"
             android:src="@drawable/ic_payment_gold"
             app:layout_constraintStart_toEndOf="@+id/time_tv"
@@ -320,6 +325,7 @@
             android:layout_marginStart="@dimen/_7sdp"
             android:fontFamily="@font/montserrat_semi_bold"
             android:text="$150.00"
+            android:visibility="gone"
             android:textColor="@color/white"
             android:textSize="@dimen/_10sdp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView6"

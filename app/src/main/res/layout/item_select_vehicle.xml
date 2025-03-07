@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/round_corner_white"
     android:layout_gravity="center"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/car_name_tv"
@@ -15,6 +15,7 @@
         android:fontFamily="@font/montserrat_bold"
         android:text="SUV - Black Cadillac Escalade"
         android:textColor="@color/black"
+        android:gravity="center"
         android:textSize="@dimen/_12sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_20sdp"
         android:adjustViewBounds="true"
-        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
         android:src="@drawable/car_img_one"
         app:elevation="@dimen/_4sdp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +80,7 @@
         android:id="@+id/cost_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
         android:fontFamily="@font/montserrat_bold"
         android:text="$206.12"
         android:textColor="@color/black"
@@ -87,5 +88,23 @@
         app:layout_constraintEnd_toEndOf="@+id/cars_img"
         app:layout_constraintStart_toStartOf="@+id/cars_img"
         app:layout_constraintTop_toBottomOf="@+id/num_of_pessengers_tv" />
+
+    <TextView
+        android:id="@+id/book_now_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/brown_btn"
+        android:elevation="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_9sdp"
+        android:text="Book Now"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cost_tv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
