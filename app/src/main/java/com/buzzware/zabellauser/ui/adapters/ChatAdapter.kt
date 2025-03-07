@@ -35,16 +35,16 @@ class ChatAdapter(
     }
 
     override fun getItemCount(): Int {
-        return list.size
+        return 5
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val item = list[position]
+        //val item = list[position]
         holder.binding.apply {
 
-            if (item.driverID!!.isNotEmpty()) {
-              /*  db.collection("Users").document(item.driverID!!).get()
+          /*  if (item.driverID!!.isNotEmpty()) {
+              *//*  db.collection("Users").document(item.driverID!!).get()
                     .addOnCompleteListener { task ->
                         if (task.isSuccessful) {
                             val user = task.result.toObject(User::class.java)
@@ -62,13 +62,13 @@ class ChatAdapter(
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
-                    }*/
-            }
+                    }*//*
+            }*/
             root.setOnClickListener {
 
                 val intent = Intent(context, ConversationActivity::class.java)
-                intent.putExtra("driverID", item.driverID)
-                intent.putExtra("messageId", item.bookingID)
+                //intent.putExtra("driverID", item.driverID)
+                //intent.putExtra("messageId", item.bookingID)
                 context.startActivity(intent)
                 (context as Activity).overridePendingTransition(
                     androidx.appcompat.R.anim.abc_fade_in,

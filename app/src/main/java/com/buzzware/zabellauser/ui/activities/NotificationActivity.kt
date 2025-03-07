@@ -31,6 +31,7 @@ class NotificationActivity : AppCompatActivity() {
             backBtn.setOnClickListener {
                 finish()
             }
+            setAdapter()
         }
        // getNotification()
 
@@ -57,6 +58,8 @@ class NotificationActivity : AppCompatActivity() {
 
     private fun setAdapter() {
         binding.notificationRv.layoutManager = LinearLayoutManager(this@NotificationActivity)
-        binding.notificationRv.adapter = NotificationAdapter(this@NotificationActivity,notificationList)
+        binding.notificationRv.adapter = NotificationAdapter(this@NotificationActivity,
+            arrayListOf()
+        )
     }
 }

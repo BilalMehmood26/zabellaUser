@@ -27,15 +27,15 @@ class NotificationAdapter(val context: Context, private val list: List<Notificat
     }
 
     override fun getItemCount(): Int {
-        return list.size
+        return 5
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = list[position]
+        /*val item = list[position]
         holder.binding.apply {
             descriptionTv.text = item.message
             dateTimeTv.text = formatDateTime(item.timestamp!!)
-        }
+        }*/
 
     }
 

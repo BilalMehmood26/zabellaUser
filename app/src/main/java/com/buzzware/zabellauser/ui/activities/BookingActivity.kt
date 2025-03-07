@@ -34,6 +34,7 @@ class BookingActivity : AppCompatActivity() {
         setListener()
         //getCompletedRides()
         //getScheduleBooking()
+        setRunningAdapter()
 
         binding.backBtn.setOnClickListener {
             finish()
@@ -104,12 +105,12 @@ class BookingActivity : AppCompatActivity() {
 
     private fun setRunningAdapter() {
         binding.rideRV.layoutManager = LinearLayoutManager(this@BookingActivity)
-        binding.rideRV.adapter = RideHistoryAdapter(this@BookingActivity, completedRideList)
+        binding.rideRV.adapter = RideHistoryAdapter(this@BookingActivity, arrayListOf())
     }
 
     private fun setCompleteAdapter() {
         binding.rideRV.layoutManager = LinearLayoutManager(this@BookingActivity)
-        binding.rideRV.adapter = ScheduleAdapter(this@BookingActivity, scheduleRideList)
+        binding.rideRV.adapter = ScheduleAdapter(this@BookingActivity, arrayListOf())
     }
 
     override fun onBackPressed() {

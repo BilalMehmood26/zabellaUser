@@ -50,6 +50,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("com.intuit.sdp:sdp-android:1.1.0")
     implementation ("com.makeramen:roundedimageview:2.3.0")
     implementation ("com.github.dhaval2404:imagepicker:2.1")

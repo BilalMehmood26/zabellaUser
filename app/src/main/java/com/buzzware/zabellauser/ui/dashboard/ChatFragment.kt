@@ -27,6 +27,7 @@ class ChatFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         getChatUser()
+        setChatAdapter()
         return binding.root
     }
 
@@ -53,7 +54,7 @@ class ChatFragment : Fragment() {
 
     private fun setChatAdapter() {
         binding.chatRV.layoutManager = LinearLayoutManager(fragmentContext)
-        binding.chatRV.adapter = ChatAdapter(fragmentContext, chatList)
+        binding.chatRV.adapter = ChatAdapter(fragmentContext, arrayListOf())
     }
 
     override fun onAttach(context: Context) {

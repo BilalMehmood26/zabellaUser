@@ -31,8 +31,8 @@ class ConversationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        toID = intent.getStringExtra("driverID")!!
-        messageId = intent.getStringExtra("messageId")!!
+   /*     toID = intent.getStringExtra("driverID")!!
+        messageId = intent.getStringExtra("messageId")!!*/
 
         setListener()
         getChat()
@@ -45,7 +45,7 @@ class ConversationActivity : AppCompatActivity() {
     }
 
     private fun getChat() {
-        binding.progressBar.visibility = View.VISIBLE
+        //binding.progressBar.visibility = View.VISIBLE
         if (messageId.isEmpty()) {
             /*db.collection("Chat").document(messageId).get().addOnCompleteListener {
 

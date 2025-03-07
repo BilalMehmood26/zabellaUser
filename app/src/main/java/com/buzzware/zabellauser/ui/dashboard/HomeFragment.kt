@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.buzzware.zabellauser.R
 import com.buzzware.zabellauser.databinding.FragmentHomeBinding
+import com.buzzware.zabellauser.ui.activities.SelectVehicleActivity
 import com.buzzware.zabellauser.ui.activities.YourRideActivity
 import com.stripe.android.PaymentConfiguration
 import com.stripe.android.Stripe
@@ -29,7 +30,7 @@ class HomeFragment : Fragment() {
         binding.apply {
 
             bookRideBtn.setOnClickListener {
-                startActivity(Intent(fragmentContext,YourRideActivity::class.java))
+                startActivity(Intent(fragmentContext,SelectVehicleActivity::class.java))
                 requireActivity().overridePendingTransition(
                     androidx.appcompat.R.anim.abc_fade_in,
                     androidx.appcompat.R.anim.abc_fade_out

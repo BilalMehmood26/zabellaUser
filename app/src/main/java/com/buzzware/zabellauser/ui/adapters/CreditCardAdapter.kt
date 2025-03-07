@@ -26,13 +26,13 @@ class CreditCardAdapter(
     }
 
     override fun getItemCount(): Int {
-        return list.size
+        return 6
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = list[position]
+        //val item = list[position]
         holder.binding.apply {
-            when (item.brand) {
+           /* when (item.brand) {
                 "visa" -> cardBrandIv.setImageResource(R.drawable.ic_visa)
                 "master" -> cardBrandIv.setImageResource(R.drawable.ic_master)
             }
@@ -42,7 +42,7 @@ class CreditCardAdapter(
 
             deleteBtn.setOnClickListener {
                 onCLick.invoke(item.id,position)
-            }
+            }*/
         }
     }
 

@@ -52,7 +52,7 @@ class WalletFragment : Fragment() {
             "pk_test_51PgBExCo08Oa4W8HRRlISwH7IOZRW42joDX0KpJRo7RK4tZhrz29Cout7tSsBEWCeODsr7IhT8jQGNiUrMIwwR0h00jZcUoUkr"
         )
 
-
+        updateAdapter()
         binding.addCardBtn.setOnClickListener {
 
         }
@@ -61,7 +61,7 @@ class WalletFragment : Fragment() {
 
     private fun updateAdapter() {
         binding.cardListRv.layoutManager = LinearLayoutManager(fragmentContext)
-        creditCardAdapter = CreditCardAdapter(fragmentContext, cardList) { pmID, pos ->
+        creditCardAdapter = CreditCardAdapter(fragmentContext, arrayListOf()) { pmID, pos ->
            // showAlertDialog(pmID, pos)
 
         }

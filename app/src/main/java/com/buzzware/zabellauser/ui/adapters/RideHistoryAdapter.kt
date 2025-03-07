@@ -35,11 +35,11 @@ class RideHistoryAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = list[position]
+       // val item = list[position]
 
-        holder.binding.apply {
+        /*holder.binding.apply {
 
-            /*db.collection("Users").document(item.driverId!!).get().addOnCompleteListener { task ->
+            *//*db.collection("Users").document(item.driverId!!).get().addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     val user = task.result.toObject(User::class.java)
                     nameTv.text = user!!.userName
@@ -56,7 +56,7 @@ class RideHistoryAdapter(
                         Toast.LENGTH_SHORT
                     ).show()
                 }
-            }*/
+            }*//*
 
             ratingTv.text = item.rating.toString()
             distanceTv.text = item.distance
@@ -66,6 +66,6 @@ class RideHistoryAdapter(
             statusTv.text = item.status
             vehcileTv.text = "---"
             ratingBar.rating = item.rating!!.toFloat()
-        }
+        }*/
     }
 }
